@@ -50,8 +50,8 @@ namespace TatThanhJsc.Extension
             {
                 SmtpClient client = new SmtpClient("smtp.gmail.com", portGmail);
                 client.EnableSsl = true;
-                MailAddress from = new MailAddress(SendFrom, "emdep.vn - Triệu người bán, tỷ người mua");
-                MailAddress to = new MailAddress(SendTo, "emdep.vn - Triệu người bán, tỷ người mua");
+                MailAddress from = new MailAddress(SendFrom, "HiPhucShop - Triệu người bán, tỷ người mua");
+                MailAddress to = new MailAddress(SendTo, "HiPhucShop - Triệu người bán, tỷ người mua");
                 MailMessage message = new MailMessage(from, to);
                 message.Body = Body;
                 message.Subject = Subject;
